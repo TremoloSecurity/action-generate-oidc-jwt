@@ -1,0 +1,15 @@
+name: 'Generate OIDC JWT'
+description: 'Generates an OpenID Connect JSON Web Token (JWT) for specified audiences based on your workflow''s identity.  The JWT is stored as a secret environment variable, so it can''t be output to the logs'
+inputs:
+  audience:  
+    description: 'The value of the `aud` claim to create with the JWT'
+    required: true
+    default: ''
+  environmentVariableName:
+    description: 'The name of the environment variable to store the resulting JWT in.  This variable is marked as a secret, so it won''t be output to the logs'
+    required: true
+    default: 'OIDC_JWT'
+outputs: {}
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
