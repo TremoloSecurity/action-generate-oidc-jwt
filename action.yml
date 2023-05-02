@@ -1,5 +1,5 @@
 name: 'Generate OIDC JWT'
-description: 'Generates an OpenID Connect JSON Web Token (JWT) for specified audiences based on your workflow''s identity.  The JWT is stored as a secret environment variable, so it can''t be output to the logs'
+description: 'Generates an OpenID Connect JSON Web Token (JWT) for specified audiences based on your workflow''s identity.'
 branding:
   icon: 'lock'
   color: 'red' 
